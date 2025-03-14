@@ -1,6 +1,6 @@
 # config/settings.py
 class Settings:
-    TABLE_FORMAT = "pretty"  # Формат таблиц (pretty, grid, html и т.д.)
-    MIN_SEGMENT_DURATION = 5.0  # Минимальная длительность сегмента (в секундах)
+    TABLE_FORMAT = "pretty"  # Table format (pretty, grid, html, etc.)
+    MIN_SEGMENT_DURATION = 5.0  # Minimum segment duration (in seconds)
 
 settings = Settings()

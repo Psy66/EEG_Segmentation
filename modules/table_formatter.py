@@ -7,12 +7,12 @@ from modules.event_processor import EventProcessor
 class TableFormatter:
     @staticmethod
     def format_table(data, headers):
-        """Форматирует данные в таблицу."""
+        """Formats data into a table."""
         return tabulate(data, headers, tablefmt=settings.TABLE_FORMAT)
 
     @staticmethod
     def format_channel_info(channels_info):
-        """Форматирует информацию о каналах."""
+        """Formats channel information."""
         data = []
         for channel in channels_info:
             loc = channel['loc']
@@ -39,8 +39,8 @@ class TableFormatter:
             data.append(channel_data)
 
         headers = [
-            "Имя канала", "Лог. номер", "Номер скана", "Калибровка", "Диапазон",
-            "Множ. единиц", "Единицы", "Система координат", "Тип катушки", "Тип канала",
+            "Channel Name", "Logical Number", "Scan Number", "Calibration", "Range",
+            "Unit Multiplier", "Unit", "Coordinate Frame", "Coil Type", "Channel Type",
             "Loc X", "Loc Y", "Loc Z"
         ]
 
@@ -48,7 +48,7 @@ class TableFormatter:
 
     @staticmethod
     def format_event_info(events, sfreq, event_id):
-        """Форматирует информацию о событиях."""
+        """Formats event information."""
         table_data = []
         for s_idx in range(len(events)):
             time_index = events[s_idx, 0]
@@ -61,5 +61,5 @@ class TableFormatter:
                 evt_name
             ])
 
-        headers = ["Время (сек)", "ID события", "Описание"]
+        headers = ["Time (sec)", "Event ID", "Description"]
         return TableFormatter.format_table(table_data, headers)
