@@ -47,14 +47,6 @@
 
 ---
 
-## 📦 Dependencies
-
-- `tkinter`: For creating the graphical interface.
-- `mne`: For reading and processing EDF files.
-- `matplotlib`: For visualizing montages.
-- `numpy`: For numerical operations.
-
----
 
 ## 📜 License
 
@@ -64,7 +56,7 @@ This project is licensed under the **MIT License**. For details, see the [LICENS
 
 ## 👨‍💻 Author
 
-**Tim Liner**  
+**Timur Petrenko**  
 📧 Email: [psy66@narod.ru](mailto:psy66@narod.ru)
 
 ---
