@@ -59,7 +59,7 @@
 If you use this tool in your research, please consider citing it as follows:
 
 ```
-Petrenko, Timur. LSL Maker Event. 2025. Available on GitHub: https://github.com/Psy66/lslmarker.
+Petrenko, Timur. EDF Segment Processor. 2025. Available on GitHub: https://github.com/Psy66/EEG_Segmentation.
 ```
 
 ---
